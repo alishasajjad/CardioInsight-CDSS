@@ -1,0 +1,23 @@
+# Mirror of ../.streamlit/config.toml so the theme/settings also load when you
+# launch from inside frontend/ (e.g. `streamlit run streamlit_app.py`).
+# Streamlit reads .streamlit/config.toml relative to the terminal's working dir,
+# so this copy covers running from frontend/ as well as from the project root.
+# Keep both files in sync if you change the theme.
+
+[theme]
+base = "light"
+primaryColor = "#0B6E99"
+backgroundColor = "#F1F5F9"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1E293B"
+font = "sans serif"
+
+[client]
+# Hide raw tracebacks from end users (production-safe). Flip to true for local debugging.
+showErrorDetails = false
+
+[server]
+maxUploadSize = 50
+# Disable the source watcher — it triggers transformers' lazy vision imports
+# (yolos/zoedepth -> torchvision) and floods the console with harmless tracebacks.
+fileWatcherType = "none"

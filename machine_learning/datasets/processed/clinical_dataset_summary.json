@@ -1,0 +1,45 @@
+{
+  "datasets": [
+    {
+      "dataset": "heart_cleveland_upload",
+      "rows": 297,
+      "target_positive_rate": 0.4613
+    },
+    {
+      "dataset": "Heart_disease_statlog",
+      "rows": 270,
+      "target_positive_rate": 0.4444
+    },
+    {
+      "dataset": "heart_disease_uci",
+      "rows": 920,
+      "target_positive_rate": 0.5533
+    },
+    {
+      "dataset": "heart_statlog_cleveland_hungary_final",
+      "rows": 1190,
+      "target_positive_rate": 0.5286
+    }
+  ],
+  "total_rows": 1001,
+  "target_rate": 0.5544,
+  "feature_columns": [
+    "age",
+    "sex",
+    "chest_pain_type",
+    "resting_bp",
+    "cholesterol",
+    "fasting_blood_sugar",
+    "resting_ecg",
+    "max_heart_rate",
+    "exercise_angina",
+    "oldpeak",
+    "st_slope",
+    "major_vessels",
+    "thalassemia",
+    "chol_bp_ratio",
+    "age_group",
+    "hr_reserve",
+    "vessel_thal_score"
+  ]
+}

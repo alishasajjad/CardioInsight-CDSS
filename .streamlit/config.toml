@@ -1,0 +1,28 @@
+# CardioInsight CDSS — Streamlit theme.
+#
+# Pinned to the LIGHT base so the app always matches its healthcare design system.
+# Without this, a browser/OS in dark mode makes Streamlit render its native widgets
+# (input fields, labels, tabs) dark while the custom CSS forces white cards — which
+# leaves form labels and text unreadable (dark-on-dark). These tokens mirror the
+# COLORS palette in frontend/ui/theme.py so native widgets and custom CSS stay consistent.
+
+[theme]
+base = "light"
+primaryColor = "#0B6E99"           # marine blue — primary actions / accents
+backgroundColor = "#F1F5F9"        # page canvas (slate-100)
+secondaryBackgroundColor = "#FFFFFF"  # cards, forms, inputs sit on white
+textColor = "#1E293B"              # slate-800 body text (~13:1 on white)
+font = "sans serif"
+
+[client]
+# Hide raw tracebacks from end users (production-safe). Flip to true for local debugging.
+showErrorDetails = false
+
+[server]
+# Keep uploads modest; this is a single-user educational demo.
+maxUploadSize = 50
+# Disable the source watcher. It walks every imported module's __path__, which
+# triggers transformers' lazy vision imports (yolos/zoedepth -> torchvision) and
+# floods the console with harmless "No module named 'torchvision'" tracebacks.
+# We don't need hot-reload to run the app.
+fileWatcherType = "none"

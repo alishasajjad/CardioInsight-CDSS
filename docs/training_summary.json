@@ -1,0 +1,189 @@
+{
+  "generated": "2026-06-21T09:26:36.915202",
+  "eda": {
+    "total_samples": 1001,
+    "disease_rate": 0.5544455544455544,
+    "sources": {
+      "heart_disease_uci": 619,
+      "heart_cleveland_upload": 297,
+      "heart_statlog_cleveland_hungary_final": 85
+    },
+    "mean_age": 53.75124875124875,
+    "mean_cholesterol": 213.51148851148852
+  },
+  "training": {
+    "deployment_model": "XGBoost",
+    "xgboost_is_default": true,
+    "feature_columns": [
+      "age",
+      "sex",
+      "chest_pain_type",
+      "resting_bp",
+      "cholesterol",
+      "fasting_blood_sugar",
+      "resting_ecg",
+      "max_heart_rate",
+      "exercise_angina",
+      "oldpeak",
+      "st_slope",
+      "major_vessels",
+      "thalassemia",
+      "chol_bp_ratio",
+      "age_group",
+      "hr_reserve",
+      "vessel_thal_score"
+    ],
+    "metrics": [
+      {
+        "model": "Random Forest",
+        "accuracy": 0.8407960199004975,
+        "precision": 0.8910891089108911,
+        "recall": 0.8108108108108109,
+        "f1_score": 0.8490566037735849,
+        "roc_auc": 0.9097097097097098,
+        "confusion_matrix": [
+          [
+            79,
+            11
+          ],
+          [
+            21,
+            90
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.79,
+            "recall": 0.8777777777777778,
+            "f1-score": 0.8315789473684211,
+            "support": 90.0
+          },
+          "1": {
+            "precision": 0.8910891089108911,
+            "recall": 0.8108108108108109,
+            "f1-score": 0.8490566037735849,
+            "support": 111.0
+          },
+          "accuracy": 0.8407960199004975,
+          "macro avg": {
+            "precision": 0.8405445544554455,
+            "recall": 0.8442942942942944,
+            "f1-score": 0.840317775571003,
+            "support": 201.0
+          },
+          "weighted avg": {
+            "precision": 0.8458253288015369,
+            "recall": 0.8407960199004975,
+            "f1-score": 0.8412307874727653,
+            "support": 201.0
+          }
+        }
+      },
+      {
+        "model": "XGBoost",
+        "accuracy": 0.835820895522388,
+        "precision": 0.89,
+        "recall": 0.8018018018018018,
+        "f1_score": 0.8436018957345972,
+        "roc_auc": 0.9050050050050049,
+        "confusion_matrix": [
+          [
+            79,
+            11
+          ],
+          [
+            22,
+            89
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7821782178217822,
+            "recall": 0.8777777777777778,
+            "f1-score": 0.8272251308900523,
+            "support": 90.0
+          },
+          "1": {
+            "precision": 0.89,
+            "recall": 0.8018018018018018,
+            "f1-score": 0.8436018957345972,
+            "support": 111.0
+          },
+          "accuracy": 0.835820895522388,
+          "macro avg": {
+            "precision": 0.836089108910891,
+            "recall": 0.8397897897897898,
+            "f1-score": 0.8354135133123248,
+            "support": 201.0
+          },
+          "weighted avg": {
+            "precision": 0.8417215900694548,
+            "recall": 0.835820895522388,
+            "f1-score": 0.8362690159534577,
+            "support": 201.0
+          }
+        }
+      },
+      {
+        "model": "ANN",
+        "accuracy": 0.8308457711442786,
+        "precision": 0.8468468468468469,
+        "recall": 0.8468468468468469,
+        "f1_score": 0.8468468468468469,
+        "roc_auc": 0.9071071071071072,
+        "confusion_matrix": [
+          [
+            73,
+            17
+          ],
+          [
+            17,
+            94
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.8111111111111111,
+            "recall": 0.8111111111111111,
+            "f1-score": 0.8111111111111111,
+            "support": 90.0
+          },
+          "1": {
+            "precision": 0.8468468468468469,
+            "recall": 0.8468468468468469,
+            "f1-score": 0.8468468468468469,
+            "support": 111.0
+          },
+          "accuracy": 0.8308457711442786,
+          "macro avg": {
+            "precision": 0.828978978978979,
+            "recall": 0.828978978978979,
+            "f1-score": 0.828978978978979,
+            "support": 201.0
+          },
+          "weighted avg": {
+            "precision": 0.8308457711442786,
+            "recall": 0.8308457711442786,
+            "f1-score": 0.8308457711442786,
+            "support": 201.0
+          }
+        }
+      }
+    ],
+    "ensemble_weights": {
+      "Random Forest": 0.3342282372843956,
+      "XGBoost": 0.3324997241734397,
+      "ANN": 0.3332720385421647
+    },
+    "best_metrics": {
+      "accuracy": 0.835820895522388,
+      "precision": 0.89,
+      "recall": 0.8018018018018018,
+      "f1_score": 0.8436018957345972,
+      "roc_auc": 0.9050050050050049
+    },
+    "clinical_datasets_only": true,
+    "test_size": 0.2,
+    "random_state": 42
+  }
+}

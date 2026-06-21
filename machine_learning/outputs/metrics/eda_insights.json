@@ -1,0 +1,11 @@
+{
+  "total_samples": 1001,
+  "disease_rate": 0.5544455544455544,
+  "sources": {
+    "heart_disease_uci": 619,
+    "heart_cleveland_upload": 297,
+    "heart_statlog_cleveland_hungary_final": 85
+  },
+  "mean_age": 53.75124875124875,
+  "mean_cholesterol": 213.51148851148852
+}

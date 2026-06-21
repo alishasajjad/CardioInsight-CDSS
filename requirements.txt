@@ -1,0 +1,20 @@
+# CardioInsight CDSS — pinned to the tested, working versions.
+# These exact pins keep the trained model artifacts and the SHAP code path
+# consistent with the runtime (an unpinned scikit-learn upgrade 1.8 -> 1.9
+# previously caused pickle-version warnings and a SHAP output-shape break).
+pandas==3.0.3
+numpy==2.4.6
+scikit-learn==1.9.0
+xgboost==3.2.0
+scipy==1.17.1
+matplotlib==3.11.0
+seaborn==0.13.2
+joblib==1.5.3
+streamlit==1.58.0
+shap==0.52.0
+groq==1.4.0
+python-dotenv==1.2.2
+reportlab==4.5.1
+bcrypt==5.0.0
+sentence-transformers==5.5.1
+faiss-cpu==1.14.3

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets — never commit real keys (but keep the .env.example template)
+.env
+.env.*
+!.env.example
+env
+*.env
+
+# Runtime data
+data/clinical_cds.db
+data/reports/*.pdf
+data/vector_store/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
