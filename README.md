@@ -10,7 +10,7 @@ CardioInsight is a clinical decision support **demonstration** that combines ens
 
 > **Disclaimer:** This application is for educational purposes only. It is not a medical device and does not provide diagnosis or treatment.
 
-> 📘 **New to the code?** See [docs/VIVA_GUIDE.md](docs/VIVA_GUIDE.md) for a function-by-function walkthrough (Roman Urdu + English), and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the architecture.
+> 📘 **New to the code?** See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the architecture.
 
 ---
 
@@ -297,3 +297,6 @@ Hold-out test set (clinical cohort, ~20% split):
 ## Disclaimer
 
 **CardioInsight CDSS is an educational clinical decision support demonstration.** It does not provide medical diagnosis, treatment, prescription, or emergency care. All outputs must be reviewed by qualified healthcare professionals. In a medical emergency, contact local emergency services immediately.
+
+## Demo Video
+- https://youtu.be/67vw09mdZUA
